@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Priority To-Do</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+  <header>
+    <h1>Priority To-Do</h1>
+  </header>
+  <main>
+    <section class="controls">
+      <form id="task-form">
+        <input type="text" name="content" placeholder="Task" required>
+        <select name="priority">
+          <option value="imp">Imp</option>
+          <option value="mid">Mid</option>
+          <option value="low">Low</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+
+      <div class="filters">
+        <div class="filter-group">
+          <span>Filter:</span>
+          <button data-filter="all" class="filter-btn active" type="button">All</button>
+          <button data-filter="imp" class="filter-btn" type="button">Imp</button>
+          <button data-filter="mid" class="filter-btn" type="button">Mid</button>
+          <button data-filter="low" class="filter-btn" type="button">Low</button>
+        </div>
+        <div class="sort-group">
+          <span>Sort:</span>
+          <button id="sort-toggle" data-sort="created_at_desc" type="button">Newest</button>
+        </div>
+      </div>
+    </section>
+
+    <ul class="task-list" id="task-list">
+      <!-- Rendered by JS -->
+    </ul>
+  </main>
+  <footer>Developed by Surya &copy; 2025</footer>
+</body>
+</html>
+

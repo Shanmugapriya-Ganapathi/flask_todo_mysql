@@ -7,7 +7,7 @@ app = Flask(__name__)
 db_config = {
     "host": os.getenv("DB_HOST", "localhost"),
     "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASSWORD", "Shanmu_166"),
+    "password": os.getenv("DB_PASSWORD", "XXX"),
     "database": os.getenv("DB_NAME", "todo_db"),
 }
 

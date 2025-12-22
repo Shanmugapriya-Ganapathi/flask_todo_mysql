@@ -27,7 +27,7 @@ mysql -u root -p < schema.sql
 ```
 $env:DB_HOST="localhost"
 $env:DB_USER="root"
-$env:DB_PASSWORD="Shanmu_166"
+$env:DB_PASSWORD="XXX"
 $env:DB_NAME="todo_db"
 ```
 5) Run the app:
